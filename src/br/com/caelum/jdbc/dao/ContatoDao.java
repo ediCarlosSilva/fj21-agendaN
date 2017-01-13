@@ -17,6 +17,11 @@ public class ContatoDao {
 	// a conexão com o banco de dados
 	private Connection connection;
 
+	public ContatoDao ( Connection connection ) {
+		this.connection = connection;
+	}
+	
+	
 	public ContatoDao() {
 		this.connection = new ConnectionFactory().getConnection();
 	}
